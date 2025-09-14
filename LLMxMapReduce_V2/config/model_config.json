@@ -1,0 +1,78 @@
+{
+    "encode": {},
+    "hidden": {
+        "group": {
+            "neuron": {
+                "model": "gemini-2.5-flash",
+                "infer_type": "OpenAI"
+            }
+        },
+        "skeleton": {
+            "single": {
+                "model": "gemini-2.5-flash",
+                "infer_type": "OpenAI"
+            },
+            "concat": {
+                "model": "gemini-2.5-flash",
+                "infer_type": "OpenAI"
+            }
+        },
+        "digest": {
+            "single": {
+                "model": "gemini-2.5-flash",
+                "infer_type": "OpenAI"
+            },
+            "merge": {
+                "model": "gemini-2.5-flash",
+                "infer_type": "OpenAI"
+            }
+        },
+        "skeleton_refinement": {
+            "cluster": {
+                    "model": "gemini-2.5-flash",
+                    "infer_type": "OpenAI"
+            },
+            "convolution": {
+                "modify": {
+                    "model": "gemini-2.5-flash",
+                    "infer_type": "OpenAI"
+                },
+                "convolution_kernel": {
+                    "model": "gemini-2.5-flash",
+                    "infer_type": "OpenAI"
+                },
+                "eval": {
+                    "model": "gemini-2.5-flash",
+                    "infer_type": "OpenAI",
+                    "max_score": 10
+                }
+            },
+            "refine": {
+                "model": "gemini-2.5-flash",
+                "infer_type": "OpenAI"
+            }
+        }
+    },
+    "decode": {
+        "survey": {
+            "model": "gemini-2.5-flash",
+            "infer_type": "OpenAI"
+        },
+        "refine": {
+            "model": "gemini-2.5-flash",
+            "infer_type": "OpenAI"
+        }
+    },
+    "openai_api": {
+        "api_key": "YOUR_API_KEY",
+        "base_url": "https://api.openai.com/v1",
+        "model": "gpt-4-turbo"
+    },
+    "google_api": {
+        "api_key": "YOUR_API_KEY"
+    },
+    "local_api": {
+        "url": "http://localhost:8000/v1",
+        "model": "llama3"
+    }
+}
